@@ -1,4 +1,4 @@
-{{%test generic_non_negative(model,column_name)%%}}
+{% test generic_non_negative(model,column_name) %}
 
 select 
     * 
@@ -7,4 +7,4 @@ from
 where 
     {{column_name}} < 0
 
-{{%endtest%}}        
+{%endtest%}        

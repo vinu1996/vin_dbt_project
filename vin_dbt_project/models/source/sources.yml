@@ -11,5 +11,6 @@ sources:
       - name: dim_customer
       - name: dim_store
       - name: dim_date
+      - name: items
 
 
