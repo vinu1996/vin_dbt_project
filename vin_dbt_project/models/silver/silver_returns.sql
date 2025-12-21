@@ -10,7 +10,7 @@ WITH bronze_returns as
     from    
         {{ref('bronze_returns')}}
 ),
-bronze_products as 
+bronze_product as 
 (
     select 
         product_sk,
