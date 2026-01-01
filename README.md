@@ -1,18 +1,18 @@
 End-to-End Retail Analytics with DBT, SQL & CI/CD
-📌 Project Overview
+ Project Overview
 In the modern data landscape, a Data Analyst must act as a Full-Stack Developer—owning the pipeline from raw data ingestion to business-ready insights.
 
 This project demonstrates a production-grade ELT (Extract, Load, Transform) pipeline. I transformed fragmented retail data (Sales, Returns, Customers, Products, and Stores) into a centralized "Single Source of Truth" to drive demographic and product-level decision-making.
 
-🎯 Key Business Objectives
+Key Business Objectives
 The goal was to move beyond basic reporting and answer complex business questions:
 
 Sales Performance: Analyze revenue breakdown by Product Category cross-referenced with Customer Gender.
 
 Reverse Logistics: Identify high-risk Return Rates by category and demographic to optimize supply chain and marketing spend.
 
-🛠️ The Tech Stack
-Data Warehouse: Snowflake / BigQuery (whichever you used)
+The Tech Stack
+Data Warehouse: Databricks
 
 Transformation: DBT (Data Build Tool) Core
 
@@ -22,7 +22,7 @@ Orchestration & Quality: GitHub Actions (CI/CD)
 
 Modeling: SQL (Jinja & Macros)
 
-🏗️ Data Architecture & Modeling
+Data Architecture & Modeling
 I implemented a modular architecture following DBT best practices:
 
 Sources: Raw data ingested from CSV/Cloud Storage.
@@ -37,7 +37,7 @@ fct_sales_performance: Sales sliced by Category and Gender.
 
 fct_return_analysis: Return metrics by Category and Gender.
 
-⚙️ Engineering Excellence (The "Multiple Hats" Approach)
+Engineering Excellence (The "Multiple Hats" Approach)
 1. The Data Engineer Hat (Scalability)
 Used the ELT pattern to ensure the warehouse does the heavy lifting. Leveraged DBT Macros and Jinja to write "DRY" (Don't Repeat Yourself) code, making the pipeline modular and easy to maintain.
 
@@ -62,7 +62,7 @@ Category vs. Gender Revenue: Identified which product departments resonate most 
 
 Return Rate Optimization: Isolated categories where specific demographics had higher return rates, providing a starting point for the Product team to investigate sizing or description issues.
 
-🚀 How to Run This Project
+ How to Run This Project
 Clone the repo:
 
 Bash
@@ -83,3 +83,4 @@ Run & Test:
 Bash
 
 dbt build
+
